@@ -9,3 +9,9 @@ def get_character_counts(text):
     else:
       chars[c] += 1
   return chars
+
+def sort_by_count(items):
+  return items[1]
+
+def sort_character_counts(chars):
+  return sorted(chars.items(), key=sort_by_count, reverse=True)
